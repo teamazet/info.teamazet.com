@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TEAM AZET — CarX Street racing team.">
+  <title>TEAM AZET | CarX Street</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="hero" id="home">
+    <nav class="nav">
+      <a class="brand" href="#home">
+        <img src="assets/azet-logo.png" alt="TEAM AZET logo">
+        <span>TEAM AZET</span>
+      </a>
+      <div class="nav-links">
+        <a href="#members">Members</a>
+        <a href="#about">About</a>
+        <a href="#community">Community</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="eyebrow">CARX STREET • 90s • EST.</div>
+      <h1>TEAM <span>AZET</span></h1>
+      <p>Built for the streets. Driven by the team.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#members">Meet the team</a>
+        <a class="btn ghost" href="https://discord.gg/hAfDFxPtxm" target="_blank" rel="noopener">Join Discord</a>
+      </div>
+    </div>
+    <div class="scroll">SCROLL <span>↓</span></div>
+  </header>
+
+  <main>
+    <section class="banner-section">
+      <img src="assets/azet-banner.png" alt="TEAM AZET banner">
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-label">01 / THE TEAM</div>
+      <div class="two-col">
+        <div>
+          <h2>ONE TEAM.<br><span>ONE NAME.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>TEAM AZET is a CarX Street community built around clean builds, 90s-inspired cars, drifting and racing.</p>
+          <p>Check out our members, join the Discord and discover our builds.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section members-section" id="members">
+      <div class="section-label">02 / MEMBERS</div>
+      <h2>TEAM <span>ROSTER</span></h2>
+
+      <div class="role-block">
+        <div class="role-title">OWNER</div>
+        <div class="member-grid">
+          <article class="member featured"><span>Fanta</span><small>TEAM AZET OWNER</small></article>
+        </div>
+      </div>
+
+      <div class="role-block">
+        <div class="role-title">TEAM LEADERS — EUROPE</div>
+        <div class="member-grid">
+          <article class="member"><span>Prixxy</span><small>TEAM LEADER • EUROPE</small></article>
+          <article class="member"><span>Asphyx</span><small>TEAM LEADER • EUROPE</small></article>
+          <article class="member"><span>MICHII</span><small>TEAM LEADER • EUROPE</small></article>
+        </div>
+      </div>
+
+      <div class="role-block">
+        <div class="role-title">TEAM LEADER — ASIA</div>
+        <div class="member-grid">
+          <article class="member"><span>DETECTIVE</span><small>TEAM LEADER • ASIA</small></article>
+        </div>
+      </div>
+
+      <div class="role-block">
+        <div class="role-title">OG MEMBER</div>
+        <div class="member-grid">
+          <article class="member"><span>rRaito_</span><small>OG TEAM AZET MEMBER</small></article>
+        </div>
+      </div>
+
+      <div class="role-block">
+        <div class="role-title">TEAM MEMBERS</div>
+        <div class="member-grid">
+          <article class="member"><span>c3rti</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>Rejsing</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>DAVE</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>STOBE</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>Mitte</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>AneeBaggz420</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>Luix</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>Meow</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>R1vn_</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>HAYDZZ</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>Cobbo</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>iz</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>xestecy</span><small>TEAM AZET MEMBER</small></article>
+          <article class="member"><span>VWSTB</span><small>TEAM AZET MEMBER</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="community-inner">
+        <div class="section-label">03 / COMMUNITY</div>
+        <h2>BUILD WITH <span>AZET.</span></h2>
+        <p>Our builds are shared in the Discord community. Pull up, check the setups and race with the team.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="https://discord.gg/hAfDFxPtxm" target="_blank" rel="noopener">JOIN DISCORD</a>
+          <a class="btn ghost" href="https://www.youtube.com/@azet_carx" target="_blank" rel="noopener">YOUTUBE</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/azet-logo.png" alt="" aria-hidden="true">
+    <div>
+      <strong>TEAM AZET</strong>
+      <span>CARX STREET • 90s</span>
+    </div>
+    <p>© 2026 TEAM AZET</p>
+  </footer>
+
+  <script>
+    const members = document.querySelectorAll('.member');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.12 });
+    members.forEach(member => observer.observe(member));
+  </script>
+</body>
+</html>
